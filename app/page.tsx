@@ -6,6 +6,7 @@ import { SupplyOverview } from '@/components/SupplyOverview';
 import { CategorySection } from '@/components/CategorySection';
 import { BlockCounter } from '@/components/BlockCounter';
 import { BucketCategory } from '@/types/supply';
+import { CumulativeEmissionsGraph } from '@/components/CumulativeEmissionsGraph';
 
 export default async function Page() {
   const data = await fetchSupplyData();
@@ -49,6 +50,11 @@ export default async function Page() {
             );
           })}
         </div>
+
+        <CumulativeEmissionsGraph 
+          buckets={data.buckets}
+          totalSupply={data.totalSupply}
+        />
 
         <BlockCounter currentBlock={data.currentBlock} />
       </main>
