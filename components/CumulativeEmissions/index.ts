@@ -1,0 +1,1 @@
+export { CumulativeEmissionsGraph } from './CumulativeEmissionsGraph';

@@ -6,7 +6,7 @@ import { SupplyOverview } from '@/components/SupplyOverview';
 import { CategorySection } from '@/components/CategorySection';
 import { BlockCounter } from '@/components/BlockCounter';
 import { BucketCategory } from '@/types/supply';
-import { CumulativeEmissionsGraph } from '@/components/CumulativeEmissionsGraph';
+import { CumulativeEmissionsGraph } from '@/components/CumulativeEmissions';
 
 export default async function Page() {
   const data = await fetchSupplyData();
